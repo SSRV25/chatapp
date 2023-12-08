@@ -10,7 +10,7 @@ export default function Livechat() {
   const messageContainerRef = useRef(null);
 
   const connectWebSocket = () => {
-    const socket = new WebSocket('ws://3.17.37.157:8000/ws/socket-server/bot1/');
+    const socket = new WebSocket('ws://3.17.37.157/ws/socket-server/bot1/');
 
     socket.onmessage = (e) => {
       console.log('Received message:', e.data);
